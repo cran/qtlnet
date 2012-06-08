@@ -1,0 +1,73 @@
+###########################################################################
+# Shared object library load directives.
+#
+# Shared object library does not need to be called in the .onLoad function in
+# zzz.r.
+#
+
+# useDynLib(qtlnet)
+
+############################################################################
+# Export directives.  These directives export functions.  S3 methods for
+# classes declared in the package should be declared with the "S3method"
+# directive.
+#
+
+export(best.qtlnet)
+export(bic.join)
+export(bic.qtlnet)
+export(c.qtlnet)
+export(check.qtlnet)
+export(dist.qtlnet)
+export(edgematch.qtlnet)
+export(est.qtlnet)
+export(graph.qtlnet)
+export(group.qtlnet)
+export(igraph.qtlnet)
+export(init.qtlnet)
+export(loci.qtlnet)
+export(mcmc.qtlnet)
+export(parallel.qtlnet)
+export(parents.qtlnet)
+export(plotbic.qtlnet)
+
+#export(Rgraphviz.qtlnet)
+export(size.qtlnet)
+export(subset.qtlnet)
+export(write.qtlnet)
+
+## The following have S3 methods:
+export(plot.qtlnet)
+export(print.qtlnet)
+export(summary.qtlnet)
+export(print.summary.qtlnet)
+
+## QDG routines
+export(qdg)
+export(graph.qdg)
+
+## Example routines.
+export(generate.qtl.markers)
+export(generate.qtl.pheno)
+
+## SEM routines.
+export(qdg.sem)
+S3method(summary, qdg.sem)
+S3method(print, qdg.sem)
+
+## perm.test routines.
+export(qdg.perm.test)
+S3method(summary, qdg.perm.test)
+S3method(print, qdg.perm.test)
+
+##############################################################################
+# S3method declarations.  These will allow generic methods to function properly
+# with functions such as "plot.qb" declared in the package.
+#
+
+S3method(plot, qtlnet)
+S3method(print, qtlnet)
+S3method(summary, qtlnet)
+S3method(print, summary.qtlnet)
+S3method(print, parents.qtlnet)
+S3method(summary, parents.qtlnet)

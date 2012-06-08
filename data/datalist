@@ -1,0 +1,8 @@
+Pscdbp
+Pscdbp.bic
+Pscdbp.qtlnet
+acyclic: acyclic.DG acyclic.data acyclic.qdg acyclic.qtl
+cyclica: cyclica.data cyclica.qtl
+cyclicb: cyclicb.data cyclicb.qtl
+cyclicc: cyclicc.data cyclicc.qtl
+glxnet: glxnet.cross glxnet.qdg glxnet.qtl
