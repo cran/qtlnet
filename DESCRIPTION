@@ -1,6 +1,6 @@
 Package: qtlnet
-Version: 1.2.4
-Date: 2012-06-08
+Version: 1.2.5
+Date: 2012-06-25
 Author: Elias Chaibub Neto <echaibub@hotmail.com> and Brian S. yandell
         <yandell@stat.wisc.edu>
 Title: Causal Inference of QTL Networks
@@ -12,6 +12,6 @@ LazyLoad: yes
 LazyData: yes
 License: GPL (>= 2)
 URL: http://www.stat.wisc.edu/~yandell/sysgen
-Packaged: 2012-06-08 13:43:47 UTC; yandell
+Packaged: 2012-06-25 17:59:47 UTC; yandell
 Repository: CRAN
-Date/Publication: 2012-06-08 14:26:38
+Date/Publication: 2012-06-25 18:16:29
