@@ -37,7 +37,7 @@ qdg <- function(cross, phenotype.names, marker.names, QTL, alpha,
   if(skel.method == "pcskel"){
     ## Create skeleton using R/pcalg package.
     suffStat <- list(C = cor(pheno.data), n = nrow(pheno.data))
-    pcskeleton <- skeleton(suffStat, gaussCItest, ncol(pheno.data), alpha)
+    pcskeleton <- skeleton(suffStat, gaussCItest, p = ncol(pheno.data), alpha = alpha)
 
     ## Transform to UDG.
     UDG <- transformPCtoUDG(pcskeleton)

@@ -1,4 +1,4 @@
-283505cad4ce6845f0afc796ed9327f3 *DESCRIPTION
+4b67ece0753b91f1418e6bb15df1526c *DESCRIPTION
 7fc0b137907c69eba32087e4887780a8 *NAMESPACE
 0c75c99c2adb882a7626e125e996f5e1 *R/average.R
 15f1b911887daabdc95016c4b7461884 *R/bic.R
@@ -12,7 +12,7 @@ a4da16e749f32c8cca41917e507c4064 *R/diag.R
 f181627fe2c4307ad91f34c5bab0cb41 *R/mcmc.R
 bbd5977dc1f3755985ac2d32d28f1294 *R/parallel.R
 73467ed8722dc96b39076664b7199ca9 *R/perm.R
-868ac5ced60702f7db67d3566d9fc284 *R/qdg.R
+281c04eb24eb5c82eb617e84fd8235f9 *R/qdg.R
 8b4f3c43cd8bdc42839fddd80ea9daf2 *R/scanone.R
 28b182e659fc61e55d4d4492d5900003 *R/score.R
 b7f579a8363973bea169ca344bbdfce3 *R/sem.R
@@ -31,7 +31,7 @@ d07d1107037fa9222a64ed2b28646da6 *data/cyclicc.RData
 28f9c8e762672e7fc4121138b9e6966e *data/glxnet.RData
 20b68e5db27f024d649742c89d764e1e *inst/doc/qtlnet.R
 8d36e317460d793350a6ea5c210451c6 *inst/doc/qtlnet.Rnw
-9a1d39dfa9013da7548c3a5fd8c10a89 *inst/doc/qtlnet.pdf
+c3dc5b54f0302fc13e24c256ecb31c85 *inst/doc/qtlnet.pdf
 2750acfc95435f16d62d62f1532e7b8f *inst/example/codetree.txt
 fa0deffc324ff36d7f9bdcb9543b684d *inst/example/notes.txt
 b77e985f57a25c8cc74e724543ce38c3 *inst/example/qdg.txt
