@@ -65,6 +65,7 @@ Ann Appl Statist 4: 320-339.
   \code{\link{igraph.qtlnet}}
 }
 \examples{
+\dontrun{
 write.qtlnet(Pscdbp.qtlnet, "Pscdbp.txt")
 }
-\keyword{ ~kwd1 }
+}

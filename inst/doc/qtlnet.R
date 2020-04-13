@@ -1,80 +1,68 @@
 ### R code from vignette source 'qtlnet.Rnw'
 
 ###################################################
-### code chunk number 1: qtlnet.Rnw:45-46
+### code chunk number 1: qtlnet.Rnw:47-48
 ###################################################
 library(qtlnet)
 
 
 ###################################################
-### code chunk number 2: qtlnet.Rnw:51-52
+### code chunk number 2: qtlnet.Rnw:53-54 (eval = FALSE)
 ###################################################
-example(acyclic)
+## example(acyclic)
 
 
 ###################################################
-### code chunk number 3: qtlnet.Rnw:57-58
+### code chunk number 3: qtlnet.Rnw:59-60 (eval = FALSE)
 ###################################################
-example(cyclica)
+## example(cyclica)
 
 
 ###################################################
-### code chunk number 4: qtlnet.Rnw:63-64
+### code chunk number 4: qtlnet.Rnw:65-66 (eval = FALSE)
 ###################################################
-example(cyclicb)
+## example(cyclicb)
 
 
 ###################################################
-### code chunk number 5: qtlnet.Rnw:69-70
+### code chunk number 5: qtlnet.Rnw:71-72 (eval = FALSE)
 ###################################################
-example(cyclicc)
+## example(cyclicc)
 
 
 ###################################################
-### code chunk number 6: qtlnet.Rnw:75-76
+### code chunk number 6: qtlnet.Rnw:77-78 (eval = FALSE)
 ###################################################
-example(glxnet)
+## example(glxnet)
 
 
 ###################################################
-### code chunk number 7: qtlnet.Rnw:83-84
+### code chunk number 7: qtlnet.Rnw:85-86
 ###################################################
 library(qtlnet)
 
 
 ###################################################
-### code chunk number 8: qtlnet.Rnw:86-93
-###################################################
-# Make width of chunks 60.
-options(width=60)
-if(!file.exists("qdgPDF")) {
-  dir.create("qdgPDF")
-  warning(paste("Creating Sweave directory qdgPDF"),
-    call. = FALSE, immediate. = TRUE)
-}
-
-
-###################################################
-### code chunk number 9: qtlnet.Rnw:99-100
+### code chunk number 8: qtlnet.Rnw:92-93
 ###################################################
 mymap <- sim.map(len=rep(100,20), n.mar=10, eq.spacing=FALSE, include.x=FALSE)
 
 
 ###################################################
-### code chunk number 10: qtlnet.Rnw:105-107
+### code chunk number 9: qtlnet.Rnw:98-100
 ###################################################
 n.ind <- 200
 mycross <- sim.cross(map=mymap, n.ind=n.ind, type="f2")
 
 
 ###################################################
-### code chunk number 11: qtlnet.Rnw:112-113
+### code chunk number 10: qtlnet.Rnw:105-106
 ###################################################
 mycross <- sim.geno(mycross,n.draws=1)
 
 
 ###################################################
-### code chunk number 12: qtlnet.Rnw:118-136
+### code chunk number 11: qtlnet.Rnw:111-129
 ###################################################
 genotypes <- pull.geno(mycross)
 geno.names <- dimnames(genotypes)[[2]]
@@ -97,20 +85,20 @@ y4 <- runif(1,0.5,1) * y3 + runif(3,0.5,1)[g41] + runif(3,0.5,1)[g42] + rnorm(n.
 
 
 ###################################################
-### code chunk number 13: qtlnet.Rnw:141-142
+### code chunk number 12: qtlnet.Rnw:134-135
 ###################################################
 mycross$pheno <- data.frame(y1,y2,y3,y4)
 
 
 ###################################################
-### code chunk number 14: qtlnet.Rnw:147-149
+### code chunk number 13: qtlnet.Rnw:140-142
 ###################################################
 markers <- list(m1,m2,m3,m4)
 names(markers) <- c("y1","y2","y3","y4")
 
 
 ###################################################
-### code chunk number 15: qtlnet.Rnw:154-164
+### code chunk number 14: qtlnet.Rnw:147-157
 ###################################################
 allqtls <- list()
 m1.pos <- find.markerpos(mycross, m1)
@@ -125,7 +113,7 @@ names(allqtls) <- c("y1","y2","y3","y4")
 
 
 ###################################################
-### code chunk number 16: qtlnet.Rnw:169-178
+### code chunk number 15: qtlnet.Rnw:162-171
 ###################################################
 out <- qdg(cross=mycross, 
            phenotype.names = c("y1","y2","y3","y4"), 
@@ -139,7 +127,7 @@ out
 
 
 ###################################################
-### code chunk number 17: qtlnet.Rnw:183-185
+### code chunk number 16: qtlnet.Rnw:176-178
 ###################################################
 graph <- graph.qdg(out)
 plot(graph)
